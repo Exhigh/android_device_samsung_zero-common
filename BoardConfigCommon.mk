@@ -82,6 +82,12 @@ EXTENDED_FONT_FOOTPRINT := true
 BOARD_USE_SAMSUNG_CAMERAFORMAT_NV21 := true
 TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY := libcamera_parameters_zero
 
+# Libsuspend-shims
+TARGET_LD_SHIM_LIBS += \
+    /system/lib/libsuspend.so|/vendor/lib/libsuspend.so \
+    /system/lib/libandroid_servers.so|/vendor/lib/libsuspend.so \
+    /system/lib64/libsuspend.so|/vendor/lib64/libsuspend.so \
+    /system/lib64/libandroid_servers.so|/vendor/lib64/libsuspend.so \
 
 # Camera-shims
 TARGET_LD_SHIM_LIBS += \

@@ -1,0 +1,3 @@
+subdirs = [
+    "libsuspend-shim",
+]
