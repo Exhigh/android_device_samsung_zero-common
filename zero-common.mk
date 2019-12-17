@@ -157,7 +157,7 @@ PRODUCT_PACKAGES += \
     fingerprint.exynos5 \
     libbauthtzcommon_shim \
     android.hardware.biometrics.fingerprint@2.1-impl \
-    android.hardware.biometrics.fingerprint@2.1-service
+    android.hardware.biometrics.fingerprint@2.1-service.samsung
 
 # Skeletons
 PRODUCT_PACKAGES += \
@@ -213,7 +213,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	keystore.exynos5 \
 	android.hardware.keymaster@3.0-impl \
-	android.hardware.keymaster@3.0-service	
+	android.hardware.keymaster@4.0-service.samsung	
 
 # Lights
 PRODUCT_PACKAGES += \
