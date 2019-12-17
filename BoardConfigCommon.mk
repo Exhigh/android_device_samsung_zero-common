@@ -128,7 +128,7 @@ JAVA_SOURCE_OVERLAYS := \
     org.lineageos.hardware|device/samsung/zero-common/lineagehw|**/*.java
 
 # HWCServices
-BOARD_USES_HWC_SERVICES := false
+BOARD_USES_HWC_SERVICES := true
 
 # Renderscript
 BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53.a57
@@ -159,6 +159,9 @@ BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 BOARD_KERNEL_SEPARATED_DT := true
 TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
+BOARD_KERNEL_LZ4C_DT := true
+LZMA_RAMDISK_TARGETS := boot,recovery
+
 
 # Manifest
 DEVICE_MANIFEST_FILE += device/samsung/zero-common/manifest.xml
@@ -175,7 +178,7 @@ BOARD_NFC_HAL_SUFFIX := universal7420
 # Samsung LSI OpenMAX
 BOARD_USE_VP8ENC_SUPPORT := true
 BOARD_USE_HEVCDEC_SUPPORT := true
-BOARD_USE_HEVC_HWIP := false
+BOARD_USE_HEVC_HWIP := true
 COMMON_GLOBAL_CFLAGS += -DUSE_NATIVE_SEC_NV12TILED
 
 # Video scaling issue workaround
