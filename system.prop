@@ -90,6 +90,8 @@ ro.nfc.sec_hal=true
 debug.hwc.force_gpu=0
 debug.hwc.max_hw_overlays=6
 debug.sf.latch_unsignaled=1
+debug.egl.hw=1
+debug.sf.hw=1
 
 #
 # Graphics
