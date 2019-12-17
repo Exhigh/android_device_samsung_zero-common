@@ -13,5 +13,8 @@ TW_MTP_DEVICE := /dev/usb_mtp_gadget
 #TW_INCLUDE_CRYPTO := true
 TW_EXCLUDE_SUPERSU := true
 TW_SCREEN_BLANK_ON_BOOT := true
+TW_USE_TOOLBOX := true
 
 PRODUCT_COPY_FILES += device/samsung/zero-common/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab
+
+RECOVERY_VARIANT := twrp
