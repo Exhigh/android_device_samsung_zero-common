@@ -220,6 +220,19 @@
         </interface>
     </hal>
 
+     <!--
+        NFC
+      -->
+     <hal format="hidl">
+        <name>android.hardware.nfc</name>
+        <transport arch="32+64">passthrough</transport>
+        <version>1.0</version>
+        <interface>
+            <name>INfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
     <!--
         Power
       -->
@@ -335,6 +348,15 @@
         <version>1.2</version>
         <interface>
             <name>IWifi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.wifi.hostapd</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IHostapd</name>
             <instance>default</instance>
         </interface>
     </hal>
